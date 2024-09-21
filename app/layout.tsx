@@ -5,8 +5,8 @@ import { cn } from '@/lib/utils'
 
 import './globals.css'
 import Providers from '../components/providers'
-import Header from '../components/ui/header'
-import Footer from '../components/ui/footer'
+import Header from '../components/header'
+import Footer from '../components/footer'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 const playfair = Playfair_Display({

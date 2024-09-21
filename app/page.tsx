@@ -1,11 +1,14 @@
-import Intro from "@/components/ui/intro";
-import Image from "next/image";
+import Intro from "@/components/intro";
+import RecentPosts from "@/components/recent-posts";
+import { MDXRemote } from 'next-mdx-remote'
 
 export default function Home() {
+  
   return (
     <section className="py-24">
       <div className="container max-w-3xl">
         <Intro/>
+        <RecentPosts />        
 
       </div>
 
