@@ -46,6 +46,7 @@ export async function sendEmail(data: ContactFormInputs) {
   }
 }
 
+// 
 export async function subscribe(data: NewsletterFormInputs) {
   const result = NewsletterFormSchema.safeParse(data)
 
