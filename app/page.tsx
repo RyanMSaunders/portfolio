@@ -3,7 +3,7 @@ import NewsletterForm from "@/components/newsletter-form";
 import RecentPosts from "@/components/recent-posts";
 import RecentProjects from "@/components/recent-projects";
 import { MDXRemote } from 'next-mdx-remote'
-import AboutPage from "./about/page";
+import AboutPage from "./landing/page";
 import SkillsPage from "./skills/page";
 import Contact from "./contact/page";
 import ProjectsPage from "./projects/page";
@@ -14,9 +14,10 @@ export default function Home() {
     <section className="py-24">
       <div className="container max-w-3xl">
         {/* Home Page */}
+        <AboutPage />
         <Intro/>
 
-        {/* <AboutPage /> */}
+        
         <SkillsPage />
         <ProjectsPage />
         <Contact />

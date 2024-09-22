@@ -13,7 +13,7 @@ export default function Header() {
 
         <ul className='flex items-center gap-6 text-sm font-light text-muted-foreground sm:gap-10'>
           <li className='transition-colors hover:text-foreground'>
-            <Link href='#about'>About</Link>
+            <Link href='#intro'>About</Link>
           </li>
           <li className='transition-colors hover:text-foreground'>
             <Link href='#skills'>Skills & Tools</Link>

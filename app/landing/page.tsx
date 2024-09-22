@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function AboutPage() {
+export default function LandingPage() {
   return (
-    <section id="about">
+    <section id="about" className='h-screen'>
       <div>AboutPage</div>
     </section>
   )
