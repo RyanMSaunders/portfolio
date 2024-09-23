@@ -41,7 +41,7 @@ export default function Landing() {
 
   
   return (
-      <div className="flex flex-col justify-center items-center pt-60">
+      <div id="landing" className="flex flex-col justify-center items-center pt-60 ">
         <h1 className={`font-sans text-6xl bg-background animate-puff-in-center title ${roboto.className}`}>
           Ryan Saunders
         </h1>
@@ -50,7 +50,7 @@ export default function Landing() {
         </h2>
         <div className='container max-w-3xl'>
           
-        <div className='flex justify-center space-x-6 md:order-2 mt-5 bg-background animate-puff-in-center'>
+        <div className='flex justify-center space-x-6 md:order-2 mt-5 bg-background animate-puff-in-center '>
           {navigation.map(item => (
             <a
               key={item.name}
@@ -64,16 +64,15 @@ export default function Landing() {
             </a>
           ))}
         </div>
-        <div className='mt-14 flex justify-center '>
+        <div className=' flex justify-center absolute left-0 right-0 bottom-[100px] animate-puff-in-center'>
           <Link href="#intro">
             <Button
               type='submit'
-              className='w-full max-w-xs disabled:opacity-50 font-sans text-2xl bg-background '
-              
+              className='w-full max-w-xs disabled:opacity-50 font-sans text-2xl text-foreground '
             > 
         
-             View My Work
-            <FontAwesomeIcon icon={faAnglesDown} className="mt-4 h-8 animate-bounce" />
+            <span className='font-sans text-2xl text-background'>View My Work</span> {/* White text */}
+            <FontAwesomeIcon icon={faAnglesDown} className="mt-4 mb-3 ml-2 h-5 animate-bounce text-background" />
             
             </Button>
           </ Link>
