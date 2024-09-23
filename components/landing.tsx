@@ -71,7 +71,7 @@ export default function Landing() {
               className='w-full max-w-xs disabled:opacity-50 font-sans text-2xl text-foreground '
             > 
         
-            <span className='font-sans text-2xl text-background'>View My Work</span> {/* White text */}
+            <span className='font-sans text-xl text-background'>View My Work</span> {/* White text */}
             <FontAwesomeIcon icon={faAnglesDown} className="mt-4 mb-3 ml-2 h-5 animate-bounce text-background" />
             
             </Button>

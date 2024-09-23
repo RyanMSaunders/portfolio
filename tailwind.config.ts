@@ -101,7 +101,7 @@ const config = {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'focus-in-expand': 'focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both',
-        'puff-in-center': 'puff-in-center 1000ms cubic-bezier(0.470, 0.000, 0.745, 0.715) both'
+        'puff-in-center': 'puff-in-center 1500ms cubic-bezier(0.470, 0.000, 0.745, 0.715) both'
       }
     }
   },
