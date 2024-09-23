@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display, Roboto } from 'next/font/google'
+import { Inter, Playfair_Display , Roboto } from 'next/font/google'
 
 import { cn } from '@/lib/utils'
 
@@ -11,7 +11,8 @@ import Footer from '../components/footer'
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 const playfair = Playfair_Display({
   subsets: ['latin'],
-  variable: '--font-serif'
+  variable: '--font-serif',
+  weight: '700'
 })
 const roboto = Roboto({ weight: '700', subsets: ['latin'], variable: '--font-roboto' });
 

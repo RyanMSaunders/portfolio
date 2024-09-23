@@ -1,0 +1,64 @@
+---
+  title: BookBeat
+  summary: A single page app that uses AI to allow users to curate their reading experience by pairing their favorite books with their favorite playlists. Pairing AI reccomendations with the Spotify API, and utilizing architecture that includes Redis and Prisma, BookBeat is an app to remember!
+  image: /images/projects/BookBeat_HomePage'.png
+  author: 'Ryan Saunders'
+  publishedAt: '2024-08-20'
+---
+
+BookBeat is a single-page app that uses AI to enhance your reading experience by seamlessly pairing your favorite books with custom playlists. This Goodreads clone empowers users to curate their reading journey by combining book recommendations with music from Spotify. Leveraging AI recommendations, Prisma for data management, and Redis for caching, NomNomExpress creates a memorable and personalized experience for book lovers.
+
+## Features
+
+- **AI Integration**: Utilize Claude AI to provide tailored book and playlist suggestions based on user preferences.
+- **OAuth Authentication**: Securely log in with Spotify and access personalized playlists.
+- **Spotify API Integration**: Effortlessly pair books with curated playlists from Spotify, making reading more immersive.
+- **OpenLibrary API Access**: Fetch book data and details to enrich your reading library.
+- **User-friendly Interface**: Intuitive design for easy navigation and seamless user experience.
+
+## Technologies
+
+- **Node.js**: JavaScript runtime for building server-side applications.
+- **Express**: Web framework for Node.js to create APIs.
+- **React**: Frontend library for building interactive user interfaces.
+- **Prisma**: ORM for efficient database management.
+- **Spotify API**: For accessing music playlists and data.
+- **OpenLibrary API**: To gather book information.
+- **Claude AI**: For generating personalized recommendations.
+- **Redis**: In-memory data structure store for caching and optimizing performance.
+- **Docker**: For containerizing the application.
+- **TypeScript**: For type-safe development.
+
+## Getting Started
+
+To get started with this project, you can clone the repository and install the dependencies:
+
+```bash
+git clone <repository-url>
+cd bookbeat
+npm install
+```
+
+## Starting the Server
+
+1. Run the database: Ensure your database is up and running.
+
+2. Backend: Navigate to the backend folder and start the server:
+
+```bash
+npm start
+```
+The backend will run on port 5444.
+
+3. Frontend: Navigate to the frontend folder and run the client:
+
+```bash
+npm run dev
+```
+
+The client will run on port 5173.
+
+
+## Conclusion
+
+BookBeat revolutionizes how readers connect with music and books, offering a unique platform to curate their personal reading experiences. By integrating powerful APIs and AI, it transforms the way users enjoy literature and sound.
