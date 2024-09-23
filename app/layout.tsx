@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+import { Inter, Playfair_Display, Roboto } from 'next/font/google'
 
 import { cn } from '@/lib/utils'
 
@@ -13,6 +13,8 @@ const playfair = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-serif'
 })
+const roboto = Roboto({ weight: '700', subsets: ['latin'], variable: '--font-roboto' });
+
 
 export const metadata: Metadata = {
   title: 'Create Next App',
