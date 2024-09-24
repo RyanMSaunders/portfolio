@@ -41,7 +41,7 @@ export default function Landing() {
 
   
   return (
-      <div id="landing" className="flex flex-col justify-center items-center pt-60 ">
+      <div id="landing" className="flex flex-col justify-center items-center " style={{ height: '70vh' }}>
         <h1 className={`font-sans text-6xl bg-background animate-puff-in-center title ${roboto.className}`}>
           Ryan Saunders
         </h1>
@@ -57,7 +57,7 @@ export default function Landing() {
               href={item.href}
               target='_blank'
               rel='noreferrer noopener'
-              className='text-muted-foreground hover:text-foreground mb-20 pb-20'
+              className='text-muted-foreground hover:text-foreground mb-20 pb-16'
             >
               <span className='sr-only'>{item.name}</span>
               <item.icon aria-hidden='true' className='h-7 w-7' />
