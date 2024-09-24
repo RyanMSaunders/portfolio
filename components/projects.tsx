@@ -14,8 +14,8 @@ export default function Projects({
   return (
       <ul className='grid grid-cols-1 gap-8 sm:grid-cols-2'>
         {projects.map(project => (
-          <div>
-            <li key={project.slug} className='group relative'>
+          <div key={project.slug}>
+            <li className='group relative'>
               <Link href={`/projects/${project.slug}`}>
                 {project.image && (
                   <div className='h-72 w-full overflow-hidden bg-muted sm:h-60'>

@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
   variable: '--font-serif',
   weight: '700'
 })
-const roboto = Roboto({ weight: '700', subsets: ['latin'], variable: '--font-roboto' });
+// const roboto = Roboto({ weight: '700', subsets: ['latin'], variable: '--font-roboto' });
 
 
 export const metadata: Metadata = {

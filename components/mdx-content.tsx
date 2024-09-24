@@ -5,8 +5,9 @@ import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote/rsc'
 
 
 // Highlighting code in post
-function Code({ children, ...props }: any) {
-  let codeHTML = highlight(children)
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function Code({ children, ...props }: any) { 
+  const codeHTML = highlight(children)
   return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />
 }
 

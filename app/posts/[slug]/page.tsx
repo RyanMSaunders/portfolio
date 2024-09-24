@@ -7,7 +7,7 @@ import { getPosts, getPostBySlug } from '../../../lib/posts'
 import { ArrowLeftIcon } from '@radix-ui/react-icons'
 import { notFound } from 'next/navigation'
 // import NewsletterForm from '../../../components/newsletter-form'
-import { MDXRemote } from 'next-mdx-remote/rsc'
+// import { MDXRemote } from 'next-mdx-remote/rsc'
 import MDXContent from '@/components/mdx-content'
 
 
