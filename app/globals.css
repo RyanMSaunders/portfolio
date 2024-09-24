@@ -76,6 +76,9 @@
 }
 
 @layer base {
+  #landing {
+    scroll-margin-top: 6rem; /* Adjust this value to the height of your header */
+  }
   * {
     @apply border-border;
     scroll-behavior: smooth;
