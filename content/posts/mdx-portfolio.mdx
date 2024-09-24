@@ -1,0 +1,90 @@
+---
+  title: Getting Started with Prisma, A Beginner’s Guide to Modern Database Management
+  summary: 
+  image: 
+  author: 'Ryan Saunders'
+  publishedAt: '2024-08-08'
+---
+
+# Why all the Prisma hype?
+
+Is SQL so painful that developers are flocking towards this popular provider of database abstractions? What does Prisma offer to developers, and why should you use it in your next project?
+
+Prisma is a modern ORM library in JavaScript whose growing popularity is making it a go-to for web developers. Their slogan says it all: “We simplify working and interacting with databases”, and certainly, it is a useful and attractive tool in the developer’s toolbelt.
+
+## Why do we need an Object Relational Model?
+
+How does it optimize the Model View Controller architecture to help us make better apps, or make apps better? In my research, I perused the Prisma docs and coded along with one of Lighthouse Lab’s mentors to build an API from scratch using TypeScript and Prisma.
+
+The general flow of the HTTP request-response cycle in a Model-View-Controller system using Prisma starts with the client’s request. This data is sent by the router to the controller, which processes the request using Prisma Client to interact with the database. Prisma Client will query the database and return the response back to the controller, which will direct it to the appropriate view with the appropriate data. The view is then rendered back to the client.
+
+## Benefits of Using Prisma
+
+What I found was that an ORM like Prisma can help increase a developer's productivity through the way it abstracts the database. Rather than working directly with SQL, a developer can create and manipulate tables using what they are already familiar with — regular objects. Creating these ‘Models’ allows for quick database setup and connection to the rest of the app through the controller. In addition, the type safety features ensure reduced runtime errors and allow you to catch bugs before they wreak havoc in your application.
+
+As developers, our job is to ensure this request/response cycle is smooth and serves the client what they asked for, but building this process can be a daunting task.
+
+## Workflow for Building a Backend API Using Prisma
+
+The workflow that was adopted during the project of building the backend API using Prisma went like this:
+
+### Setup
+
+1. **Prisma installation**
+2. **Connecting Prisma to database using PrismaClient**
+
+### Implementing a Feature Using Prisma
+
+1. **Create the Data Model**
+
+   ```
+   model Movie {
+     id            Int       @id @default(autoincrement())
+     title         String
+     releaseDate   DateTime
+     runtimeInMins Int
+     casting       Casting[]
+     createdAt     DateTime  @default(now())
+     updateAt      DateTime  @updatedAt
+   }
+Create the Migrations for that Data Model
+
+```
+npx prisma migrate dev --name=create_<model name>_model
+// Create Router, add Router to Server File
+
+
+router.get('/', (req, res) => {
+    res.json({ msg: 'List of Movies' });
+});
+// Create Controller for your database CRUD operation
+
+export const getAllMovies = async (req, res) => {
+  // Write Query using Prisma
+  const movies = await prisma.movie.findMany();
+}
+// Import Controller into Router and Create Route
+
+
+router.get('/', getAllMovies);
+// Create Seeds for Model, Add it asynchronously to boilerplate seed.ts code
+
+// Run the Seeds
+```
+Use Prisma Studio to check if seeds have populated the table
+
+Use Postman, Insomnia to check route output
+
+Repeat steps 5–13 for the rest of your database CRUD operations
+
+Once demonstrated a few times through various CRUD operations, and with various models, it became very clear that this was an efficient backend workflow that could greatly speed up the way I create applications.
+
+In addition, I can create many-to-many relationships between tables, which work as two one-to-many relationships through a bridge/join table. You can use this relationship to create wide-reaching and specified database queries across tables. For example, showing an actor from the Actor model, and all of the movies they have appeared in from the Movie model.
+
+
+Increasing developer productivity, ensuring type safety, compatibility with varying databases, and the ability to query are all features that make Prisma worth getting to know. But are there any downsides?
+
+One argument against ORMs is that their abstraction of the database can be harmful. Your database is your gold, and creating a layer of abstraction between you and your gold can be risky, especially with a new technology that might not be maintained long-term—what happens to your apps then? Another thought is that developers who work only in Prisma lose the opportunity to become familiar with SQL, which is a major disadvantage if there is a bug that requires manipulating the SQL itself rather than the abstraction. Prisma is an exciting tool, but it’s important to remain cautious and to proceed with open eyes when adopting new technologies.
+
+Conclusion
+Overall, in my short experience with ORMs such as Prisma and Active Record, one thing that stands out is the way that they manage to consolidate and bridge the request and response cycle. As a new full-stack developer, this is an exciting idea to me, and while also exploring other technologies and workflows, continuing to get familiar with Object Relational Models will help me gain a wider understanding of web development as a whole.
