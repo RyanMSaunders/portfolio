@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+import { Inter, Playfair_Display , Roboto } from 'next/font/google'
 
 import { cn } from '@/lib/utils'
 
@@ -11,8 +11,11 @@ import Footer from '../components/footer'
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 const playfair = Playfair_Display({
   subsets: ['latin'],
-  variable: '--font-serif'
+  variable: '--font-serif',
+  weight: '700'
 })
+const roboto = Roboto({ weight: '700', subsets: ['latin'], variable: '--font-roboto' });
+
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -25,7 +28,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang='en' suppressHydrationWarning className='scroll-smooth'>
+      <head>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+      </head>
       <body
         className={cn(
           'flex min-h-screen flex-col font-sans antialiased',
