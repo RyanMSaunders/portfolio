@@ -41,7 +41,7 @@ export default function Landing() {
 
   
   return (
-      <div id="landing" className="flex flex-col justify-center items-center " style={{ height: '70vh' }}>
+      <div  className="flex flex-col justify-center items-center pt-60 ">
         <h1 className={`font-sans text-6xl bg-background animate-puff-in-center title ${roboto.className}`}>
           Ryan Saunders
         </h1>
