@@ -3,7 +3,6 @@ import { JSX } from 'react'
 import { highlight } from 'sugar-high'
 import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote/rsc'
 
-import Counter from '../components/counter'
 
 // Highlighting code in post
 function Code({ children, ...props }: any) {
@@ -13,7 +12,6 @@ function Code({ children, ...props }: any) {
 
 const components = {
   code: Code,
-  Counter
 }
 
 export default function MDXContent(
