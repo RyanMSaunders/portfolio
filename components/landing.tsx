@@ -57,14 +57,14 @@ export default function Landing() {
               href={item.href}
               target='_blank'
               rel='noreferrer noopener'
-              className='text-muted-foreground hover:text-foreground'
+              className='text-muted-foreground hover:text-foreground mb-20 pb-20'
             >
               <span className='sr-only'>{item.name}</span>
               <item.icon aria-hidden='true' className='h-7 w-7' />
             </a>
           ))}
         </div>
-        <div className=' flex justify-center absolute left-0 right-0 bottom-[100px] animate-puff-in-center'>
+         <div className=' flex justify-center absolute left-0 right-0 animate-puff-in-center'>  {/*bottom-[100px] */}
           <Link href="#intro">
             <Button
               type='submit'
