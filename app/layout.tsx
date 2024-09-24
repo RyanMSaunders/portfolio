@@ -14,6 +14,7 @@ const playfair = Playfair_Display({
   variable: '--font-serif',
   weight: '700'
 })
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 // const roboto = Roboto({ weight: '700', subsets: ['latin'], variable: '--font-roboto' });
 
 
