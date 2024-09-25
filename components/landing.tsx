@@ -57,7 +57,7 @@ export default function Landing() {
               href={item.href}
               target='_blank'
               rel='noreferrer noopener'
-              className='text-muted-foreground hover:text-foreground mb-20 pb-16'
+              className='text-muted-foreground hover:text-foreground mb-20 pb-12'
             >
               <span className='sr-only'>{item.name}</span>
               <item.icon aria-hidden='true' className='h-7 w-7' />
