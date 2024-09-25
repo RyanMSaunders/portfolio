@@ -20,7 +20,7 @@ export default function Header() {
                          before:absolute before:left-0 before:top-0 before:bottom-0 before:w-8 before:bg-gradient-to-r before:from-background before:to-transparent
                          after:absolute after:right-0 after:top-0 after:bottom-0 after:w-8 after:bg-gradient-to-l after:from-background after:to-transparent
                          md:overflow-visible md:before:hidden md:after:hidden'>
-          <li className='transition-colors hover:text-foreground ml-3'>
+          <li className='transition-colors hover:text-foreground'>
             <Link href='/#intro'>About</Link>
           </li>
           <li className='transition-colors hover:text-foreground'>
@@ -29,7 +29,7 @@ export default function Header() {
           <li className='transition-colors hover:text-foreground'>
             <Link href='/#projects'>Work</Link>
           </li>
-          <li className='transition-colors hover:text-foreground mr-3'>
+          <li className='transition-colors hover:text-foreground'>
             <Link href='/#contact'>Contact</Link>
           </li>
 
