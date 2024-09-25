@@ -20,7 +20,7 @@ export default function Header() {
                          before:absolute before:left-0 before:top-0 before:bottom-0 before:w-8 before:bg-gradient-to-r before:from-background before:to-transparent
                          after:absolute after:right-0 after:top-0 after:bottom-0 after:w-8 after:bg-gradient-to-l after:from-background after:to-transparent
                          md:overflow-visible md:before:hidden md:after:hidden'> */}
-         <ul className='flex items-center gap-6 overflow-x-auto flex-nowrap text-sm font-light text-muted-foreground
+         <ul className='flex items-center gap-6 flex-nowrap text-sm font-light text-muted-foreground
                          scroll-smooth whitespace-nowrap transition-all duration-300 ease-in-out // Added transition for smoother adjustments
                          before:absolute before:left-0 before:top-0 before:bottom-0 before:w-8 before:bg-gradient-to-r before:from-background before:to-transparent
                          after:absolute after:right-0 after:top-0 after:bottom-0 after:w-8 after:bg-gradient-to-l after:from-background after:to-transparent
