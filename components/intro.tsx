@@ -11,7 +11,7 @@ export default function Intro() {
           I&#39;m a Full-Stack Web Developer, Ontario Certified Teacher, and Musician based in Toronto, Canada. I&#39;m passionate about learning new methods and technologies as they arise and collaborating with others.
         </p>
         <p className='mt-3 font-light text-muted-foreground'>
-          I have a Bachelor's Degree in Education from Brock University, a BA in Music from Humber College, and a Diploma in Full-Stack Web Development from Lighthouse Labs. I love writing and performing music, teaching, and building dynamic, user-friendly web applications that solve real-world problems using clean code and effective design.
+          I have a Bachelor&#39;s Degree in Education from Brock University, a BA in Music from Humber College, and a Diploma in Full-Stack Web Development from Lighthouse Labs. I love writing and performing music, teaching, and building dynamic, user-friendly web applications that solve real-world problems using clean code and effective design.
         </p>
         <p className='mt-3 font-light text-muted-foreground'>
           I&#39;m happiest when I&#39;m learning, creating, and contributing to something that will make a difference. Feel free to reach out and say hello!
