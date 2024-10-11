@@ -14,6 +14,7 @@ export type ProjectMetadata = {
   title?: string
   summary?: string
   image?: string
+  gif?: string
   author?: string
   publishedAt?: string
   slug: string
