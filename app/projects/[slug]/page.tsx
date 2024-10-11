@@ -29,7 +29,7 @@ export default async function Project({
   }
 
   const { metadata, content } = project
-  const { title, image, author, publishedAt } = metadata
+  const { title, image, gif, author, publishedAt } = metadata
 
   return (
     <section className='pb-24 pt-32'>
@@ -52,6 +52,18 @@ export default async function Project({
             />
           </div>
         )}
+
+        {gif && (
+          <div className='relative mb-6 h-96 w-full overflow-hidden rounded-lg'>
+            <Image
+              src={gif}
+              alt={title || ''}
+              className='object-contain'
+              fill
+            />
+          </div>
+        )}
+
 
         <header>
           <h1 className='title'>{title}</h1>

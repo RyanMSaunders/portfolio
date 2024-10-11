@@ -29,18 +29,6 @@ export default function Projects({
                   
                 )}
 
-                {project.gif && (
-                  <div className='h-72 w-full overflow-hidden bg-muted sm:h-60'>
-                    <Image
-                      src={project.gif}
-                      alt={project.title || ''}
-                      fill
-                      className='rounded-lg object-contain object-center transition-transform duration-500 group-hover:scale-105'
-                    />
-                  </div>
-                  
-                )}
-
                 <div className='absolute inset-[1px] rounded-lg bg-background/70 opacity-0 transition-opacity duration-500 group-hover:opacity-100' />
 
                 <div className='absolute inset-x-0 bottom-0 translate-y-2 px-6 py-5 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100'>
