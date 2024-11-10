@@ -29,7 +29,7 @@ export default async function Project({
   }
 
   const { metadata, content } = project
-  const { title, image, gif, author, publishedAt } = metadata
+  const { title, image, gif, gif2, gif3, gif4, gif5, author, publishedAt } = metadata
 
   return (
     <section className='pb-24 pt-32'>
@@ -57,6 +57,50 @@ export default async function Project({
           <div className='relative mb-6 h-96 w-full overflow-hidden rounded-lg'>
             <Image
               src={gif}
+              alt={title || ''}
+              className='object-contain'
+              fill
+            />
+          </div>
+        )}
+
+        {gif2 && (
+          <div className='relative mb-6 h-96 w-full overflow-hidden rounded-lg'>
+            <Image
+              src={gif2}
+              alt={title || ''}
+              className='object-contain'
+              fill
+            />
+          </div>
+        )}
+
+        {gif3 && (
+          <div className='relative mb-6 h-96 w-full overflow-hidden rounded-lg'>
+            <Image
+              src={gif3}
+              alt={title || ''}
+              className='object-contain'
+              fill
+            />
+          </div>
+        )}
+
+        {gif4 && (
+          <div className='relative mb-6 h-96 w-full overflow-hidden rounded-lg'>
+            <Image
+              src={gif4}
+              alt={title || ''}
+              className='object-contain'
+              fill
+            />
+          </div>
+        )}
+
+        {gif5 && (
+          <div className='relative mb-6 h-96 w-full overflow-hidden rounded-lg'>
+            <Image
+              src={gif5}
               alt={title || ''}
               className='object-contain'
               fill

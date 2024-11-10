@@ -15,6 +15,10 @@ export type ProjectMetadata = {
   summary?: string
   image?: string
   gif?: string
+  gif2?: string
+  gif3?: string
+  gif4?: string
+  gif5?: string
   author?: string
   publishedAt?: string
   slug: string
